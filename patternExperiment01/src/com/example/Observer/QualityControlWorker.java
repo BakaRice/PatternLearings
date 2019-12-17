@@ -1,10 +1,9 @@
 package com.example.Observer;
 
-public class Worker implements Observer {
-
+public class QualityControlWorker implements Observer{
     /*
-        员工编号
-         */
+       员工编号
+        */
     private Integer id;
     /*
     员工名称
@@ -13,7 +12,7 @@ public class Worker implements Observer {
 
     @Override
     public void update(String message) {
-        System.out.println(name +"Worker Received Problem "+ message);
+        System.out.println(name +"QCworker Received Problem "+ message);
     }
 
     public Integer getId() {
@@ -32,7 +31,7 @@ public class Worker implements Observer {
         this.name = name;
     }
 
-    public Worker(Integer id, String name) {
+    public QualityControlWorker(Integer id, String name) {
         this.id = id;
         this.name = name;
     }

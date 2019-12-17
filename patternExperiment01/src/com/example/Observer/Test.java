@@ -7,6 +7,7 @@ public class Test {
         ProductionProblems.register(new Worker(1, "Lily"));
        Worker jack = new Worker(2, "Jack");
         ProductionProblems.register(jack);
+        ProductionProblems.register(new QualityControlWorker(1, "TAN"));
 
         //发生错误
         ProductionProblems.setMessage("生产线故障");
